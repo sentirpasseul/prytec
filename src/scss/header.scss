@@ -1,6 +1,36 @@
 @import "./reset.css";
 
-header {
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(242, 242, 242, 0.4);
+  backdrop-filter: blur(6.5px);
+
+  .logo {
+    margin: 14px 40px;
+  }
+
+  .menu {
     display: flex;
-    justify-content: space-between;
+
+    .menu--item {
+      display: flex;
+      padding: 32px;
+
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .contacts {
+    margin: 20px 40px;
+    background: #9e9dcb;
+    border-radius: 3px;
+    padding: 11px 32px;
+
+    span {
+      color: #ffc466;
+    }
+  }
 }
